@@ -1,0 +1,202 @@
+#main{
+  color: #000000;
+  font-family:cursive
+  }
+
+#resultArea, #container0{
+  padding: 2%;
+  /* background-color: coral; */
+  /* background-color: #D37e06; */
+  background-color: #F6F6F6;
+  /* background-color: #111111; */
+  margin: 1%;
+  /* border-style: solid; */
+  border-radius: 5px;
+  width: inherit;
+  box-shadow: 11px 11px 10px 1px black;
+  /* box-shadow: inset 4px 4px 9px 1px black; */
+  height: min-content;
+}
+#container {
+  border-style: solid;
+  border-radius: 5px;
+  padding: 7px 7px;
+  margin: auto;
+  max-height: auto;
+  /* background-color: #878683; */
+  /* background-color: #222f3e; */
+  /* background-color: #424143; */
+  background-color: #282C34;
+  width: min-content;
+  color: white;
+  font: 16px/1.4 sans-serif;
+  border-radius: 20px;
+  box-shadow: 5px 5px 11px 4px black;
+}
+
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.radio_input {
+  display: none;
+}
+
+.radio_label {
+  padding: 12px 22px;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #ffffff;
+  /* background: #079bf1; */
+  background: #424143;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.radio_label:not(:last-of-type) {
+  /* border-right: 1px solid #1b09c0; */
+  border-right: 1px solid black;
+}
+
+.radio_input:checked+.radio_label {
+  /* background: #1b09c0; */
+  background: #D37e06;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+/* custom size of radio button for android */
+
+@media screen and (max-width: 380px) {
+  #container {
+    width:100%
+  }
+  .radio{
+    width:100%;
+  }
+  .radio_label{
+    width:16.66%;
+  padding: 3% 3%;
+  font-size: 20px;
+  text-align:center;
+  }
+}
+
+/* ======================================= */
+/*QuickReset*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html,
+body {
+  height: 100%;
+  font: 14px/1.4 sans-serif;
+} */
+
+input,
+textarea {
+  font: 14px/1.4 sans-serif;
+}
+
+.input-group {
+  display: table;
+  border-collapse: collapse;
+  width: auto;
+  margin-top: 10px;
+
+}
+
+.input-group>div {
+  display: table-cell;
+  /* border: 1px solid #121212; */
+  vertical-align: middle;
+  /* needed for Safari */
+}
+
+.input-group-text {
+  /* background: #eee; */
+  background: #576574;
+  color: white;
+  padding: 0px 12px;
+}
+
+.input-group-area {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.input-group input {
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #bebebe;
+  color: black;
+}
+
+.prepend {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.append {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn {
+  border-color:#D37e06;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+  margin: 4px 2px;
+  cursor: pointer;
+  /* background-color: #008CBA; */
+  background-color: #222f3e;
+}
+
+#result{
+  padding: 0 12px;
+}
+
+/* ==========table==================== */
+
+#tb {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D37e06;
+}
+
+thead {
+  background-color: #D37e06;
+}
+
+
+/* Custmizing DataTable jQuery */
+
+#tb_filter{
+  display: none;
+}
+
+  

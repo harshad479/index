@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1.css">
+
+  <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"> -->
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="container0">
+      <div id="container">
+        <div class="radio" id="radio">
+          <input class="radio_input" type="radio" name="browser" onclick="myFunction(this.value)" value="$" id="myRadio1">
+          <label class="radio_label" for="myRadio1">$</label>      <!---->
+
+          <input class="radio_input" type="radio" name="browser" onclick="myFunction(this.value)" value="&#8377" id="myRadio2" checked>
+          <label class="radio_label" for="myRadio2">&#8377</label>      <!--Indian Rupee-->
+
+          <input class="radio_input" type="radio" name="browser" onclick="myFunction(this.value)" value="&#8364" id="myRadio3">
+          <label class="radio_label" for="myRadio3">&#8364</label>      <!--Euro-->
+
+          <input class="radio_input" type="radio" name="browser" onclick="myFunction(this.value)" value="£" id="myRadio4">
+          <label class="radio_label" for="myRadio4">£</label>      <!---->
+
+          <input class="radio_input" type="radio" name="browser" onclick="myFunction(this.value)" value="¥" id="myRadio5">
+          <label class="radio_label" for="myRadio5">¥</label>      <!---->
+
+          <input class="radio_input" type="radio" name="browser" onclick="myFunction(this.value)" value=" " id="myRadio6">
+          <label class="radio_label" for="myRadio6"> </label>      <!---->
+        </div>
+
+        <br><br>
+
+        <div>
+          <label for="P">Enter Principle Amount</label><br>
+          <div class="input-group">
+            <div class="input-group-text prepend">
+              <span id="currSign">&#8377</span>
+            </div>
+            <div class="input-group-area"><input class="append" type="number" id="P"></div>
+          </div>
+          <br>
+
+          <label for="I">Enter Rate Of Interest</label><br>
+          <div class="input-group">
+            <div class="input-group-area"><input class="prepend" type="number" id="R"></div>
+            <div class="input-group-text append">
+              <span>%</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div><label for="Y">Years</label><input class="prepend append" type="number" id="Y"
+                style="margin-top: 5px; margin-right:1px">
+            </div>
+            <div><label for="M">Months</label><input class="append prepend" type="number" id="M"
+                style="margin-top: 5px; margin-left:1px">
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <button id="go" class="btn">Calculate</button><br><br>
+      </div>
+    </div>
+
+    <div id="resultArea" style="display: none">
+
+      <div id="result">
+      </div><br>
+
+      <div>
+        <table id="tb" style="width: 100%"></table>
+      </div>
+
+      <div id="chartContainer" style="height: 410px; width: 100%">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="1.js"></script>
+
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <!-- DataTables js -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+</body>
+
+</html>
