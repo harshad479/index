@@ -16,7 +16,6 @@
   box-shadow: 11px 11px 10px 1px black;
   /* box-shadow: inset 4px 4px 9px 1px black; */
   height: min-content;
-  text-align:center;
 }
 #container {
   border-style: solid;
